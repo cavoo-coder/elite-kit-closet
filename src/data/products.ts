@@ -6,6 +6,11 @@ import jersey5 from "@/assets/jersey-5.jpg";
 import jersey6 from "@/assets/jersey-6.jpg";
 import jersey7 from "@/assets/jersey-7.jpg";
 import jersey8 from "@/assets/jersey-8.jpg";
+import jerseyArgentina from "@/assets/jersey-argentina.jpg";
+import jerseyFrance from "@/assets/jersey-france.jpg";
+import jerseyEngland from "@/assets/jersey-england.jpg";
+import jerseyGermany from "@/assets/jersey-germany.jpg";
+import jerseyPortugal from "@/assets/jersey-portugal.jpg";
 
 /**
  * EDIT YOUR CATALOGUE HERE.
