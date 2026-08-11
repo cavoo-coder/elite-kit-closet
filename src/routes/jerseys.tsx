@@ -9,9 +9,8 @@ const description =
   "Browse all football jerseys and kits available in Tanzania: club shirts, national teams, retro jerseys and full kits. Filter, sort and order on WhatsApp.";
 
 export const Route = createFileRoute("/jerseys")({
-  validateSearch: (search: Record<string, unknown>) => ({
-    q: typeof search["q"] === "string" ? search["q"] : "",
-  }),
+  validateSearch: (search: Record<string, unknown>): { q?: string } =>
+    typeof search["q"] === "string" && search["q"] ? { q: search["q"] } : {},
   head: () => ({
     meta: [
       { title },
@@ -27,7 +26,7 @@ export const Route = createFileRoute("/jerseys")({
 });
 
 function JerseysPage() {
-  const { q } = Route.useSearch();
+  const { q = "" } = Route.useSearch();
 
   return (
     <Layout>
